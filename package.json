@@ -1,0 +1,22 @@
+{
+  "name": "budget-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:main": "tsc --project main/tsconfig.json",
+    "dev:electron": "npm run build:main && electron main/dist/main.js",
+    "dev:react": "cd renderer && npm run dev",
+    "dev:backend": "ts-node backend/src/index.ts",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:react\" \"npm run dev:electron\""
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "concurrently": "^8.2.2",
+    "electron": "^36.1.0",
+    "ts-node": "^10.9.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
