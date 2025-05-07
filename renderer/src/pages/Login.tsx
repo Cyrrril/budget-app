@@ -40,7 +40,7 @@ export default function Login() {
       <Card className="w-full max-w-md shadow-2xl border-none bg-white dark:bg-pastel-purple-100 rounded-2xl transition-colors duration-300">
         <CardHeader>
           <CardTitle className="text-center text-3xl font-bold text-pastel-purple-500 dark:text-pastel-yellow-500">
-            Welcome Back
+            Welcome to myBudget
           </CardTitle>
         </CardHeader>
 
